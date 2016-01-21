@@ -6,8 +6,8 @@
 //  Copyright © 2016年 xw.long. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XXRootViewController.h"
 
-@interface HudDemoViewController : UIViewController
+@interface HudDemoViewController :XXRootViewController
 
 @end

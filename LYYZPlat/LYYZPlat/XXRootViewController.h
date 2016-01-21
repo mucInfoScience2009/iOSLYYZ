@@ -10,4 +10,12 @@
 
 @interface XXRootViewController : UIViewController
 
+
+//
+- (void)showHint:(NSString *)hint hide:(CGFloat)delay;
+
+
+-(void)showAlertControllerWithTitle:(NSString *)title andSubTitle:(NSString *)subTitle;
+
+
 @end

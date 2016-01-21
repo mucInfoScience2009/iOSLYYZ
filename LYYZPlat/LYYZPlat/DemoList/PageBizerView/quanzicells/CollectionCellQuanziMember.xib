@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="quanziMemberCell" id="gTV-IL-0wX" customClass="CollectionCellQuanziMember">
+            <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="12B-C6-FBl">
+                        <rect key="frame" x="21" y="5" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="12B-C6-FBl" secondAttribute="height" multiplier="1:1" id="Umb-yx-Nva"/>
+                            <constraint firstAttribute="width" constant="70" id="jGY-79-a6j"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zdc-Xy-elj">
+                        <rect key="frame" x="24" y="93" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="JmK-CZ-3mt"/>
+                            <constraint firstAttribute="height" constant="12" id="ids-9O-1a3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="柳碟风" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pof-fb-6ZE">
+                        <rect key="frame" x="31" y="75" width="50" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="hce-U8-eMk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="见习管理员" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMh-4e-5Om">
+                        <rect key="frame" x="37" y="91.5" width="60" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="RXV-lh-dcn"/>
+                            <constraint firstAttribute="height" constant="14.5" id="rEs-HH-rdE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Pof-fb-6ZE" firstAttribute="top" secondItem="12B-C6-FBl" secondAttribute="bottom" constant="0.5" id="0yd-Yi-tqd"/>
+                <constraint firstItem="KMh-4e-5Om" firstAttribute="leading" secondItem="Zdc-Xy-elj" secondAttribute="trailing" constant="1" id="4qU-D9-nnD"/>
+                <constraint firstItem="Pof-fb-6ZE" firstAttribute="width" secondItem="12B-C6-FBl" secondAttribute="width" constant="-20" id="Bg5-xQ-2Cz"/>
+                <constraint firstItem="Zdc-Xy-elj" firstAttribute="top" secondItem="Pof-fb-6ZE" secondAttribute="bottom" constant="2" id="Gag-vD-Uvf"/>
+                <constraint firstAttribute="centerY" secondItem="12B-C6-FBl" secondAttribute="centerY" constant="16" id="Ml6-fh-K3L"/>
+                <constraint firstAttribute="centerX" secondItem="12B-C6-FBl" secondAttribute="centerX" id="OfW-c1-7mT"/>
+                <constraint firstItem="Zdc-Xy-elj" firstAttribute="leading" secondItem="Pof-fb-6ZE" secondAttribute="leading" constant="-7" id="QNu-15-NUL"/>
+                <constraint firstItem="KMh-4e-5Om" firstAttribute="top" secondItem="Pof-fb-6ZE" secondAttribute="bottom" constant="0.5" id="qb4-Nb-h5a"/>
+                <constraint firstItem="Zdc-Xy-elj" firstAttribute="leading" secondItem="12B-C6-FBl" secondAttribute="leading" constant="3" id="uvP-49-sKb"/>
+            </constraints>
+            <size key="customSize" width="111" height="121"/>
+            <connections>
+                <outlet property="imgvIcon" destination="12B-C6-FBl" id="1Z2-qB-vZd"/>
+                <outlet property="imgvMark" destination="Zdc-Xy-elj" id="BsN-Zf-3qf"/>
+                <outlet property="labelMark" destination="KMh-4e-5Om" id="emy-8f-f8w"/>
+                <outlet property="labelName" destination="Pof-fb-6ZE" id="vKO-KV-dpz"/>
+            </connections>
+            <point key="canvasLocation" x="249.5" y="297.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

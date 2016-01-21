@@ -22,4 +22,16 @@
 static NSString *USER_DEFAULT_KEY_UUID      = @"userDefaultsUUIDKey";
 
 
+//注册通知标识名
+#define k_noti_Login_Approval               @"k_noti_Login_Approval"
+#define k_noti_Login_Success                @"k_noti_Login_Success"
+#define k_noti_Regist_Success               @"k_noti_Regist_Success"
+#define k_noti_Exit_Application             @"k_noti_Exit_Application"
+
+
+
+
+
+
+
 #endif /* UserDetault_h */

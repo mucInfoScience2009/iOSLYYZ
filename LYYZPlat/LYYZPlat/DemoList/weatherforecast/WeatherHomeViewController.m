@@ -37,6 +37,9 @@
     MUCLog(@"selected index = %ld",(long)segContrl.selectedSegmentIndex);
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [self showAlertControllerWithTitle:@"Weatherforecast" andSubTitle:@"需要你处理好这个设计，简单的数据如何实现优雅丰富的交互视觉感和应用操作体验呢？beyond you !周飞群"];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -44,19 +47,5 @@
 
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

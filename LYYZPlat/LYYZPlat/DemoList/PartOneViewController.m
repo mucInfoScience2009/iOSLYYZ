@@ -9,6 +9,8 @@
 #import "PartOneViewController.h"
 #import "WeatherHomeViewController.h"
 #import "HudDemoViewController.h"
+#import "TBRegionListViewController.h"
+#import "PageRootViewController.h"
 
 @interface PartOneViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -40,6 +42,9 @@
         _arraySoure = [NSMutableArray array];
         [_arraySoure insertObject:@"WeatherForcast" atIndex:0];
         [_arraySoure insertObject:@"MBProgress" atIndex:1];
+        [_arraySoure insertObject:@"RegionList" atIndex:2];
+        [_arraySoure insertObject:@"PageQuanziVC" atIndex:3];
+        
     }
     return _arraySoure;
 }
@@ -80,6 +85,12 @@
     }else if (indexPath.row == 1){
         HudDemoViewController *hudDemoVC = [[HudDemoViewController alloc] initWithNibName:@"HudDemoViewController" bundle:nil];
         [self.navigationController pushViewController:hudDemoVC animated:YES];
+    }else if (indexPath.row == 2){
+        TBRegionListViewController *_regionLVC = [[TBRegionListViewController alloc] init];
+        [self.navigationController pushViewController:_regionLVC animated:YES];
+    }else if (indexPath.row == 3){
+        PageRootViewController *pageRVC = [[PageRootViewController alloc] init];
+        [self.navigationController pushViewController:pageRVC animated:YES];
     }
 }
 

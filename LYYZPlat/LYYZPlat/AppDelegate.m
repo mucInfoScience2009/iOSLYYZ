@@ -16,11 +16,11 @@
 #import "PartTwoViewController.h"
 #import "PartThreeViewController.h"
 
-
 #import "LoginViewController.h"
 
-
 @interface AppDelegate ()
+
+@property (nonatomic, strong) UITabBarController *tabVC;
 
 @end
 
@@ -57,16 +57,35 @@
     
     
     LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
-    self.window.rootViewController = loginVC;
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(15 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.window.rootViewController = tabC;
-    });
     
+    self.tabVC = tabC;
+    
+    
+    
+//    self.window.rootViewController = loginVC;
+    self.window.rootViewController = tabC;
+
+    
+    
+    [self registerNitifications];
     
     
     [self.window makeKeyAndVisible];
+    
+    
     return YES;
+}
+
+-(void)registerNitifications{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(rootViewControllerWithTabVC) name:k_noti_Login_Approval object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(rootViewControllerWithTabVC) name:k_noti_Exit_Application object:nil];
+}
+-(void)rootViewControllerWithTabVC{
+    self.window.rootViewController = self.tabVC;
+}
+-(void)exitYourApplicaiton{
+        exit(0);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

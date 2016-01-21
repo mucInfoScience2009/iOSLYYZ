@@ -36,6 +36,11 @@
 -(void)viewWillDisappear:(BOOL)animated{
     [self.tabBarController.tabBar setHidden:NO];
 }
+
+-(void)viewDidAppear:(BOOL)animated{
+    [self showAlertControllerWithTitle:@"加载提示控件" andSubTitle:@"根据需要涉及，选择自己喜欢的加载提示等等运用，fromhere"];
+}
+
 - (void)viewDidLoad {
     
     self.title = @"HudDemo";

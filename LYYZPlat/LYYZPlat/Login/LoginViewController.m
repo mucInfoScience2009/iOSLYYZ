@@ -145,14 +145,19 @@
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        
         // Configure for text only and offset down
         hud.mode = MBProgressHUDModeText;
         hud.labelText = @"看你小子面相合适，允了~";
         hud.margin = 10.f;
         hud.removeFromSuperViewOnHide = YES;
-        
         [hud hide:YES afterDelay:4];
+        
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self showAlertController];
+            });
+        });
     });
 }
 
@@ -178,5 +183,35 @@
     }];
     [dataTask resume];
 }
+
+-(void)showAlertController{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:alertTitleLove message:alertquestionLove preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *actionOne = [UIAlertAction actionWithTitle:@"Yes I do" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:k_noti_Login_Approval object:nil];
+    }];
+    [alertController addAction:actionOne];
+    
+    
+    UIAlertAction *actionTwo = [UIAlertAction actionWithTitle:@"No，😄" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        // Configure for text only and offset down
+        hud.mode = MBProgressHUDModeText;
+        hud.labelText = @"恋天地之悠悠，独怆然而涕下";
+        hud.margin = 10.f;
+        hud.removeFromSuperViewOnHide = YES;
+        [hud hide:YES afterDelay:3];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[NSNotificationCenter defaultCenter] postNotificationName:k_noti_Exit_Application object:nil];
+            });
+        });
+    }];
+    [alertController addAction:actionTwo];
+
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
+
 
 @end

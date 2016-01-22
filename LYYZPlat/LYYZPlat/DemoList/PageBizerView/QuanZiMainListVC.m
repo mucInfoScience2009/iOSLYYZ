@@ -129,6 +129,28 @@
 -(void)netWorkGetQZList{
 //    DataInterface *_dIF = [[DataInterface alloc] initWithDelegate:self];
 //    [_dIF CircleGetlistWithName:@"" andTag:@""];
+    
+    if (!_arrQZList) _arrQZList = [NSMutableArray array];
+    [_arrQZList removeAllObjects];
+    for (int i=0; i< arc4random()%10+2; i++) {
+            D_QZList *dQZ = [D_QZList new];
+        dQZ.con_num         = [NSString stringWithFormat:@"%d",i];
+        dQZ.content         = [NSString stringWithFormat:@"%d",i];
+        dQZ.create_time     = [NSString stringWithFormat:@"%d",i];
+        dQZ.id              = [NSString stringWithFormat:@"%d",i];
+        dQZ.img             = [NSString stringWithFormat:@"%d",i];
+        dQZ.img_str         = [NSString stringWithFormat:@"%d",i];
+        dQZ.name            = [NSString stringWithFormat:@"%d",i];
+        dQZ.uid             = [NSString stringWithFormat:@"%d",i];
+        dQZ.is_circle       = [NSString stringWithFormat:@"%d",i];
+        dQZ.is_pwd          = [NSString stringWithFormat:@"%d",i];
+        dQZ.user_img        = [NSString stringWithFormat:@"%d",i];
+        dQZ.user_num        = [NSString stringWithFormat:@"%d",i];
+        dQZ.username        = [NSString stringWithFormat:@"%d",i];
+        [_arrQZList addObject:dQZ];
+    }
+    [self.tableView reloadData];
+    
 }
 
 //申请加入圈子

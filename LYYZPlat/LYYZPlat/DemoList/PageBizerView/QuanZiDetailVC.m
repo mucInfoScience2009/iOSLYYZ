@@ -417,6 +417,26 @@ static NSString *identifier = @"quanziMemberCell";
 -(void)netWorkForQuanZiXiangQing{
 //    DataInterface *_dIF = [[DataInterface alloc] initWithDelegate:self];
 //    [_dIF CircleInfoWithCid:[self.dQZList.ID integerValue]];
+    
+        D_QZList *dQZ = [D_QZList new];
+    NSString *i  = @"hahaha";
+    
+        dQZ.con_num         = [NSString stringWithFormat:@"%@",i];
+        dQZ.content         = [NSString stringWithFormat:@"%@",i];
+        dQZ.create_time     = [NSString stringWithFormat:@"%@",i];
+        dQZ.id              = [NSString stringWithFormat:@"%@",i];
+        dQZ.img             = [NSString stringWithFormat:@"%@",i];
+        dQZ.img_str         = [NSString stringWithFormat:@"%@",i];
+        dQZ.name            = [NSString stringWithFormat:@"%@",i];
+        dQZ.uid             = [NSString stringWithFormat:@"%@",i];
+        dQZ.is_circle       = [NSString stringWithFormat:@"%@",i];
+        dQZ.is_pwd          = [NSString stringWithFormat:@"%@",i];
+        dQZ.user_img        = [NSString stringWithFormat:@"%@",i];
+        dQZ.user_num        = [NSString stringWithFormat:@"%@",i];
+        dQZ.username        = [NSString stringWithFormat:@"%@",i];
+
+    [self refreshUIItems];
+
 }
 
 -(void)dataInterfaceRequestFinishedWithReturnStatus:(NSInteger)status andResult:(NSDictionary *)result andType:(NSString *)type{

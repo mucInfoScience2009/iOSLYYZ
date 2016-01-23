@@ -17,5 +17,6 @@
 
 -(void)showAlertControllerWithTitle:(NSString *)title andSubTitle:(NSString *)subTitle;
 
+@property (nonatomic, assign) BOOL hiddenTabBar;
 
 @end

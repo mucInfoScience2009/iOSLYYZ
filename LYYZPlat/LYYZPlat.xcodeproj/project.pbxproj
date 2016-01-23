@@ -99,6 +99,14 @@
 		22C23B5C1C50E8C20068B328 /* CollectionCellQuanziMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C23B541C50E8C20068B328 /* CollectionCellQuanziMember.m */; };
 		22C23B5D1C50E8C20068B328 /* CollectionCellQuanziMember.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C23B551C50E8C20068B328 /* CollectionCellQuanziMember.xib */; };
 		22C23B5E1C50E8C20068B328 /* CellQZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C23B571C50E8C20068B328 /* CellQZ.m */; };
+		22C23B651C5216BA0068B328 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C23B641C5216BA0068B328 /* HomeViewController.m */; };
+		22C23B671C52183A0068B328 /* SFTListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C23B661C52183A0068B328 /* SFTListViewController.swift */; };
+		22C23B691C521EAB0068B328 /* SwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C23B681C521EAB0068B328 /* SwiftView.swift */; };
+		22C23B751C5335430068B328 /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C23B741C5335430068B328 /* MyTabBarViewController.m */; };
+		22C23B781C5339180068B328 /* MyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C23B771C5339180068B328 /* MyNavigationController.m */; };
+		22C23B7B1C53407E0068B328 /* StructViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C23B7A1C53407E0068B328 /* StructViewController.m */; };
+		22C23B7D1C5345710068B328 /* SFTLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C23B7C1C5345710068B328 /* SFTLabelViewController.swift */; };
+		22C23B7F1C5350360068B328 /* SFTPlatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C23B7E1C5350360068B328 /* SFTPlatViewController.swift */; };
 		22F4458B1C4CB3B000751F95 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4458A1C4CB3B000751F95 /* MBProgressHUD.m */; };
 		22F445991C4CB7A000751F95 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F4458D1C4CB7A000751F95 /* Icon.png */; };
 		22F4459A1C4CB7A000751F95 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F4458E1C4CB7A000751F95 /* Icon@2x.png */; };
@@ -141,7 +149,6 @@
 		22F473471C48E988003C0672 /* LYYZPlatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F473461C48E988003C0672 /* LYYZPlatUITests.m */; };
 		22F473561C48EA23003C0672 /* XXRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F473551C48EA23003C0672 /* XXRootViewController.m */; };
 		22F4735C1C48EA8B003C0672 /* YTFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4735B1C48EA8B003C0672 /* YTFViewController.m */; };
-		22F473621C48EAE6003C0672 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F473611C48EAE6003C0672 /* HomeViewController.m */; };
 		22F473681C4A3A9D003C0672 /* RKSwipeBetweenViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F473671C4A3A9D003C0672 /* RKSwipeBetweenViewControllers.m */; };
 		22F4736C1C4A3B91003C0672 /* PartOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4736B1C4A3B91003C0672 /* PartOneViewController.m */; };
 		22F4736F1C4A3BA6003C0672 /* PartTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4736E1C4A3BA6003C0672 /* PartTwoViewController.m */; };
@@ -304,6 +311,20 @@
 		22C23B551C50E8C20068B328 /* CollectionCellQuanziMember.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCellQuanziMember.xib; sourceTree = "<group>"; };
 		22C23B561C50E8C20068B328 /* CellQZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellQZ.h; sourceTree = "<group>"; };
 		22C23B571C50E8C20068B328 /* CellQZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellQZ.m; sourceTree = "<group>"; };
+		22C23B601C5216350068B328 /* LYYZPlat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LYYZPlat-Bridging-Header.h"; sourceTree = "<group>"; };
+		22C23B631C5216BA0068B328 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		22C23B641C5216BA0068B328 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		22C23B661C52183A0068B328 /* SFTListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTListViewController.swift; sourceTree = "<group>"; };
+		22C23B681C521EAB0068B328 /* SwiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftView.swift; sourceTree = "<group>"; };
+		22C23B6A1C52384E0068B328 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		22C23B731C5335430068B328 /* MyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarViewController.h; sourceTree = "<group>"; };
+		22C23B741C5335430068B328 /* MyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarViewController.m; sourceTree = "<group>"; };
+		22C23B761C5339180068B328 /* MyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavigationController.h; sourceTree = "<group>"; };
+		22C23B771C5339180068B328 /* MyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavigationController.m; sourceTree = "<group>"; };
+		22C23B791C53407E0068B328 /* StructViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructViewController.h; sourceTree = "<group>"; };
+		22C23B7A1C53407E0068B328 /* StructViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructViewController.m; sourceTree = "<group>"; };
+		22C23B7C1C5345710068B328 /* SFTLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTLabelViewController.swift; sourceTree = "<group>"; };
+		22C23B7E1C5350360068B328 /* SFTPlatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTPlatViewController.swift; sourceTree = "<group>"; };
 		22F445891C4CB3B000751F95 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		22F4458A1C4CB3B000751F95 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		22F4458D1C4CB7A000751F95 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -375,8 +396,6 @@
 		22F473551C48EA23003C0672 /* XXRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXRootViewController.m; sourceTree = "<group>"; };
 		22F4735A1C48EA8B003C0672 /* YTFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTFViewController.h; sourceTree = "<group>"; };
 		22F4735B1C48EA8B003C0672 /* YTFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTFViewController.m; sourceTree = "<group>"; };
-		22F473601C48EAE6003C0672 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		22F473611C48EAE6003C0672 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		22F473661C4A3A9D003C0672 /* RKSwipeBetweenViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSwipeBetweenViewControllers.h; sourceTree = "<group>"; };
 		22F473671C4A3A9D003C0672 /* RKSwipeBetweenViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKSwipeBetweenViewControllers.m; sourceTree = "<group>"; };
 		22F4736A1C4A3B91003C0672 /* PartOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartOneViewController.h; sourceTree = "<group>"; };
@@ -694,6 +713,35 @@
 			path = quanzicells;
 			sourceTree = "<group>";
 		};
+		22C23B5F1C52159B0068B328 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				22C23B6B1C5332E00068B328 /* StructVC */,
+				22C23B601C5216350068B328 /* LYYZPlat-Bridging-Header.h */,
+				22C23B631C5216BA0068B328 /* HomeViewController.h */,
+				22C23B641C5216BA0068B328 /* HomeViewController.m */,
+				22C23B681C521EAB0068B328 /* SwiftView.swift */,
+				22C23B661C52183A0068B328 /* SFTListViewController.swift */,
+				22C23B7C1C5345710068B328 /* SFTLabelViewController.swift */,
+				22C23B7E1C5350360068B328 /* SFTPlatViewController.swift */,
+				22C23B6A1C52384E0068B328 /* MyPlayground.playground */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		22C23B6B1C5332E00068B328 /* StructVC */ = {
+			isa = PBXGroup;
+			children = (
+				22C23B731C5335430068B328 /* MyTabBarViewController.h */,
+				22C23B741C5335430068B328 /* MyTabBarViewController.m */,
+				22C23B761C5339180068B328 /* MyNavigationController.h */,
+				22C23B771C5339180068B328 /* MyNavigationController.m */,
+				22C23B791C53407E0068B328 /* StructViewController.h */,
+				22C23B7A1C53407E0068B328 /* StructViewController.m */,
+			);
+			path = StructVC;
+			sourceTree = "<group>";
+		};
 		22F445881C4CB38200751F95 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -803,6 +851,7 @@
 		22F473201C48E988003C0672 /* LYYZPlat */ = {
 			isa = PBXGroup;
 			children = (
+				22C23B5F1C52159B0068B328 /* HomePage */,
 				00D70E0D1C4E592300463EC1 /* YQS */,
 				22F445ED1C4CF51800751F95 /* Login */,
 				015088131C4A825B000560EA /* Utitle */,
@@ -820,8 +869,6 @@
 				22C23A8A1C50CA9F0068B328 /* TBTableViewCellItem.m */,
 				22C23A8B1C50CA9F0068B328 /* TBTableViewDelegate.h */,
 				22F473691C4A3B00003C0672 /* DemoList */,
-				22F473601C48EAE6003C0672 /* HomeViewController.h */,
-				22F473611C48EAE6003C0672 /* HomeViewController.m */,
 				22F4735A1C48EA8B003C0672 /* YTFViewController.h */,
 				22F4735B1C48EA8B003C0672 /* YTFViewController.m */,
 				22F473271C48E988003C0672 /* ViewController.h */,
@@ -1150,6 +1197,7 @@
 				22F473561C48EA23003C0672 /* XXRootViewController.m in Sources */,
 				22C23A8D1C50CA9F0068B328 /* TBTableViewCellItem.m in Sources */,
 				22F4736C1C4A3B91003C0672 /* PartOneViewController.m in Sources */,
+				22C23B691C521EAB0068B328 /* SwiftView.swift in Sources */,
 				22C23AB81C50DAF10068B328 /* QuanZiSearchListVC.m in Sources */,
 				22F445E81C4CF45D00751F95 /* TBRegion.m in Sources */,
 				22F445C71C4CE38100751F95 /* UILabel+Helper.m in Sources */,
@@ -1160,6 +1208,7 @@
 				22C23B3D1C50E7F40068B328 /* QuanZiAddFriendApplySendVC.m in Sources */,
 				22C23A861C50CA2B0068B328 /* TBTableViewCell.m in Sources */,
 				22C23B351C50E7F40068B328 /* QuanZiPageVC.m in Sources */,
+				22C23B781C5339180068B328 /* MyNavigationController.m in Sources */,
 				22C23AA81C50D7A60068B328 /* Control_BezierPath.m in Sources */,
 				22C23AC31C50DBBF0068B328 /* QuanZiTypeChooseVC.m in Sources */,
 				22F473291C48E988003C0672 /* ViewController.m in Sources */,
@@ -1170,6 +1219,7 @@
 				22C23B5E1C50E8C20068B328 /* CellQZ.m in Sources */,
 				22C23B581C50E8C20068B328 /* CellSocialCircle.m in Sources */,
 				22C23AA51C50D7A60068B328 /* LAlertView.m in Sources */,
+				22C23B7D1C5345710068B328 /* SFTLabelViewController.swift in Sources */,
 				22C23B461C50E8530068B328 /* D_QZDetail.m in Sources */,
 				22F445DB1C4CEC6500751F95 /* FMDatabaseQueue.m in Sources */,
 				22F445D91C4CEC6500751F95 /* FMDatabaseAdditions.m in Sources */,
@@ -1183,7 +1233,9 @@
 				22C23A821C50C6C60068B328 /* TBRegionCell.m in Sources */,
 				22F4736F1C4A3BA6003C0672 /* PartTwoViewController.m in Sources */,
 				22C23B5A1C50E8C20068B328 /* CellQZPostList.m in Sources */,
+				22C23B671C52183A0068B328 /* SFTListViewController.swift in Sources */,
 				22F445DA1C4CEC6500751F95 /* FMDatabasePool.m in Sources */,
+				22C23B7F1C5350360068B328 /* SFTPlatViewController.swift in Sources */,
 				22C23A8C1C50CA9F0068B328 /* TBObject.m in Sources */,
 				22F445B71C4CCC5000751F95 /* HudDemoViewController.m in Sources */,
 				22C23B451C50E8530068B328 /* D_QZPostList.m in Sources */,
@@ -1197,15 +1249,17 @@
 				22C23B4A1C50E8740068B328 /* QuanZiJoinApplyVC.m in Sources */,
 				22F445E91C4CF45D00751F95 /* TBRegionDBManager.m in Sources */,
 				22F445BB1C4CE1D400751F95 /* UIView+Sizes.m in Sources */,
+				22C23B751C5335430068B328 /* MyTabBarViewController.m in Sources */,
 				22F445C21C4CE2A600751F95 /* NSString+Utilities.m in Sources */,
 				22C23B471C50E8530068B328 /* D_QZList.m in Sources */,
+				22C23B651C5216BA0068B328 /* HomeViewController.m in Sources */,
 				22F473681C4A3A9D003C0672 /* RKSwipeBetweenViewControllers.m in Sources */,
 				22F473231C48E988003C0672 /* main.m in Sources */,
 				22C23AA61C50D7A60068B328 /* LDropDown.m in Sources */,
 				22C23B5B1C50E8C20068B328 /* CellQZPostContent.m in Sources */,
 				22C23B391C50E7F40068B328 /* QuanZiPostVC.m in Sources */,
-				22F473621C48EAE6003C0672 /* HomeViewController.m in Sources */,
 				22F4458B1C4CB3B000751F95 /* MBProgressHUD.m in Sources */,
+				22C23B7B1C53407E0068B328 /* StructViewController.m in Sources */,
 				22C23AA91C50D7A60068B328 /* ControlBezierPlat.m in Sources */,
 				22C23B3C1C50E7F40068B328 /* QuanZiMemberHomeVC.m in Sources */,
 			);
@@ -1282,6 +1336,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1327,6 +1382,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1352,13 +1408,18 @@
 			baseConfigurationReference = 0AE2756B5AD9E99254415060 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LYYZPlat/PrefixHeader.pch";
 				INFOPLIST_FILE = LYYZPlat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "muc-edu.LYYZPlat";
+				PRODUCT_MODULE_NAME = LYYZPlat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LYYZPlat/HomePage/LYYZPlat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -1367,13 +1428,17 @@
 			baseConfigurationReference = 3DC51628B92FE21AB864F550 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LYYZPlat/PrefixHeader.pch";
 				INFOPLIST_FILE = LYYZPlat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "muc-edu.LYYZPlat";
+				PRODUCT_MODULE_NAME = LYYZPlat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LYYZPlat/HomePage/LYYZPlat-Bridging-Header.h";
 			};
 			name = Release;
 		};

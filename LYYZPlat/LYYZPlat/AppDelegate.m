@@ -46,12 +46,16 @@
     PartThreeViewController *demo3 = [PartThreeViewController new];
     [navDemo.viewControllerArray addObjectsFromArray:@[demo,demo2,demo3]];
     tabC.viewControllers = @[navHomeVC,navZZCVC,navYTFVC,navYQVC,navDemo];
-    tabC.selectedIndex = 4;
+    tabC.selectedIndex = 0;
     
     for (UINavigationController *nav in tabC.viewControllers) {
         NSString *vcName = [NSString stringWithFormat:@"%@",NSStringFromClass([[nav.viewControllers lastObject] class])];
         nav.title = [vcName substringToIndex:[vcName rangeOfString:@"ViewController"].location];
         [nav.viewControllers lastObject].title = nav.title;
+        
+        
+        UITabBarItem *itemOne = [[UITabBarItem alloc] initWithTitle:nav.title image:[UIImage imageNamed:@"icon_quanzi_add"] selectedImage:[UIImage imageNamed:@"icon_quanzi_lock"]];
+        nav.tabBarItem = itemOne;
     }
     
     
@@ -65,6 +69,21 @@
     
 //    self.window.rootViewController = loginVC;
     self.window.rootViewController = tabC;
+    
+    
+    
+    NSString *charSpace = @" ";
+    char space = [charSpace characterAtIndex:0];
+    int codeIndex = space;
+    printf("codeIndex = %d", codeIndex);
+    
+    [charSpace stringByAddingPercentEscapesOnce];
+    
+    
+    
+    NSString *hello = @"VBN我 代码 djj 是ll43 90";
+    NSString *newHello = [self spac32FromString:hello];
+    
 
     
     
@@ -76,6 +95,22 @@
     
     return YES;
 }
+
+-(NSString *)spac32FromString:(NSString *)string{
+    NSMutableString *newStr = [NSMutableString string];
+    for (int i=0; i<string.length; i++) {
+        NSString *charStr = [string substringWithRange:NSMakeRange(i, 1)];
+        char space = [string characterAtIndex:i];
+        int codeIndex = space;
+        if (codeIndex == 160) {
+            [newStr appendString:@" "];
+        }else{
+            [newStr appendString:charStr];
+        }
+    }
+    return newStr;
+}
+
 
 -(void)registerNitifications{
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(rootViewControllerWithTabVC) name:k_noti_Login_Approval object:nil];

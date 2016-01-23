@@ -15,29 +15,39 @@
 @implementation XXRootViewController
 
 
-
+-(void)viewWillAppear:(BOOL)animated{
+    if (_hiddenTabBar) {
+        if (self.tabBarController) {
+            [self.tabBarController.tabBar setHidden:YES];
+        }
+    }
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    if (self.tabBarController) {
+        [self.tabBarController.tabBar setHidden:NO];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     //去透明属性导航
-    self.navigationController.navigationBar.translucent = NO;
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:53.0/155 green:168.0/255 blue:252.0/255 alpha:1];
-    
-    
-    //    设置导航条上文案的颜色
-    NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:18], NSFontAttributeName,nil];
-    [self.navigationController.navigationBar setTitleTextAttributes:attributes];
-    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    if (self.navigationController) {
+        
+        self.navigationController.navigationBar.translucent = NO;
+        self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:53.0/155 green:168.0/255 blue:252.0/255 alpha:1];
+        
+        
+        //    设置导航条上文案的颜色
+        NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:18], NSFontAttributeName,nil];
+        [self.navigationController.navigationBar setTitleTextAttributes:attributes];
+        [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+
+    }
 
     
     
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

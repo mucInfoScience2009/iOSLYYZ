@@ -10,6 +10,9 @@
 
 import UIKit
 
+
+public var listItem:NSArray?
+
 var dataSource:NSMutableArray=NSMutableArray();
 
 
@@ -32,6 +35,8 @@ class SFTListViewController: XXRootViewController,UITableViewDataSource,UITableV
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.redColor();
         
+        
+        listItem = NSArray.init(array: ["font-Family","More","YouKnow","","","","","",""])
         
         for index in 1...5 {
             let number:NSNumber = NSNumber.init(integer: index);
@@ -61,12 +66,25 @@ class SFTListViewController: XXRootViewController,UITableViewDataSource,UITableV
             cell = UITableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: identifier);
         }
         let number = dataSource.objectAtIndex(indexPath.row);
-        cell!.textLabel?.text = NSString.init(format: "index --> %d", number.integerValue) as String;
+        cell!.textLabel?.text = NSString.init(format: "index --> %d   :%@", number.integerValue,(listItem?.objectAtIndex(indexPath.row))as! String) as String;
+
         return cell!;
     }
     
     
-    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        if(indexPath.row == 0){
+            let _stLabelVC:SFTLabelViewController = SFTLabelViewController();
+            //值传递方式处理这个问题
+            _stLabelVC.tmpString = "Font-Family"
+            self.navigationController?.pushViewController(_stLabelVC, animated: true);
+        }else if(indexPath.row == 1){
+            let _stPlatVC:SFTPlatViewController = SFTPlatViewController();
+            self.navigationController?.pushViewController(_stPlatVC, animated: true);
+        }
+    }
     
     
     

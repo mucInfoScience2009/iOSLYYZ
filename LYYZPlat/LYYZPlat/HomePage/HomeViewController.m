@@ -8,8 +8,7 @@
 
 #import "HomeViewController.h"
 #import "LYYZPlat-Swift.h"
-
-
+#import "StructViewController.h"
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -30,6 +29,15 @@
 
     [self.view addSubview:self.tableView];
     
+    
+    UIBarButtonItem *oneBarItem = [[UIBarButtonItem alloc] initWithTitle:@"SFT" style:UIBarButtonItemStylePlain target:self action:@selector(gotoSFTPage)];
+    self.navigationItem.rightBarButtonItem = oneBarItem;
+    
+}
+
+-(void)gotoSFTPage{
+    SFTListViewController *sftLVC = [[SFTListViewController alloc] init];
+    [self.navigationController pushViewController:sftLVC animated:YES];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -63,7 +71,7 @@
 -(NSMutableArray *)arraySource{
     if (!_arraySource) {
         _arraySource = [NSMutableArray new];
-        [_arraySource addObject:@"SFT-01"];
+        [_arraySource addObject:@"Struct-01"];
     }
     return _arraySource;
 }
@@ -100,10 +108,12 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row == 0) {
-    
-        SFTListViewController *sftLVC = [[SFTListViewController alloc] init];
-        [self.navigationController pushViewController:sftLVC animated:YES];
+       
         
+        StructViewController *structvc = [[StructViewController alloc] init];
+        [self presentViewController:structvc animated:YES completion:nil];
+
+
     }else if (indexPath.row == 1){
 
     }else if (indexPath.row == 2){

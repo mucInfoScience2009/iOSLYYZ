@@ -10,6 +10,24 @@ import UIKit
 
 
 class SwiftView: UIView {
+    
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setUp()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        setUp()
+    }
+    
+    func setUp() {
+        //Or any init you can use to perform some custom initialization
+        
+    }
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -18,7 +36,4 @@ class SwiftView: UIView {
         // Drawing code
     }
     */
-    
-
-
 }

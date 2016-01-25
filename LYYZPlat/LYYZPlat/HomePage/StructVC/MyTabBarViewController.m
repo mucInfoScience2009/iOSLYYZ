@@ -15,12 +15,13 @@
 @implementation MyTabBarViewController
 
 
--(void)viewWillAppear:(BOOL)animated{
-    [self.tabBarController.tabBar setHidden:YES];
-}
--(void)viewWillDisappear:(BOOL)animated{
-    [self.tabBarController.tabBar setHidden:NO];
-}
+//-(void)viewWillAppear:(BOOL)animated{
+//    [self.tabBarController.tabBar setHidden:YES];
+//}
+//
+//-(void)viewWillDisappear:(BOOL)animated{
+//    [self.tabBarController.tabBar setHidden:NO];
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

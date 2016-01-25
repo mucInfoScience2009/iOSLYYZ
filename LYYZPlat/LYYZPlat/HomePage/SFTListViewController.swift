@@ -25,10 +25,7 @@ class SFTListViewController: XXRootViewController,UITableViewDataSource,UITableV
         super.viewWillAppear(animated);
         self.tabBarController?.tabBar.hidden = true;
     }
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated);
-        self.tabBarController?.tabBar.hidden = false;
-    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +33,7 @@ class SFTListViewController: XXRootViewController,UITableViewDataSource,UITableV
         self.view.backgroundColor = UIColor.redColor();
         
         
-        listItem = NSArray.init(array: ["font-Family","More","YouKnow","","","","","",""])
+        listItem = NSArray.init(array: ["font-Family","User-Agent","YouKnow","","","","","",""])
         
         for index in 1...5 {
             let number:NSNumber = NSNumber.init(integer: index);
@@ -81,14 +78,17 @@ class SFTListViewController: XXRootViewController,UITableViewDataSource,UITableV
             _stLabelVC.tmpString = "Font-Family"
             self.navigationController?.pushViewController(_stLabelVC, animated: true);
         }else if(indexPath.row == 1){
+            let _userAgentInfoVC:SFTUserAgentInfoViewController = SFTUserAgentInfoViewController()
+            _userAgentInfoVC.tempTitle = "User-Agent-Info"
+            self.navigationController?.pushViewController(_userAgentInfoVC, animated: true)
+        }
+        else if(indexPath.row == 2){
             let _stPlatVC:SFTPlatViewController = SFTPlatViewController();
             self.navigationController?.pushViewController(_stPlatVC, animated: true);
         }
     }
     
-    
-    
-    
+       
     /*
     // MARK: - Navigation
 

@@ -31,6 +31,32 @@
 
 
 
+#define APPVERSION                                          ([[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"])
+#define KEYFROM                                             [NSString stringWithFormat:@"TigerBrokers.%@.iPhone", APPVERSION]
+#define DEVICE_OS_VERSION                                   [[[UIDevice currentDevice] systemVersion] floatValue]\
+#define TBAvalibleOS(os_version)                            ([[[UIDevice currentDevice] systemVersion] floatValue] >= os_version)
+
+// 本地开户版本号, 和服务器的 open_version 字段比较. 如果 open_version > OPEN_ACCOUNT_VERSION, web 开户; 反之使用客户端的开户方式, 之前是 native, 有了 SDK 后用 SDK
+// 开户 SDK 修改后, 由 SDK 维护一个开户版本号, 在 SDK 内部进行判断, OPEN_ACCOUNT_VERSION 不在使用
+#define OPEN_ACCOUNT_VERSION                                (1)
+//
+#define IS_IPAD                                             (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE                                           (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA                                           ([[UIScreen mainScreen] scale] >= 2.0)
+
+#define SCREEN_WIDTH                                        ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT                                       ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH                                   (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH                                   (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define IS_IPHONE_4_OR_LESS                                 (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5                                         (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6                                         (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P                                        (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+
+
+
 //block refrence
 #define weakSelf()                                          __weak __typeof(self) weakSelf = self
 #define strongSelf()                                        __strong __typeof(weakSelf) strongSelf = weakSelf

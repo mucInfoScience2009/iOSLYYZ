@@ -11,6 +11,7 @@
 		00D70E151C4E664800463EC1 /* RegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D70E141C4E664800463EC1 /* RegisterController.xib */; };
 		00D70E181C4E668600463EC1 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D70E171C4E668600463EC1 /* RegisterController.m */; };
 		015088191C4BF500000560EA /* WeatherHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015088181C4BF500000560EA /* WeatherHomeViewController.m */; };
+		22B2806C1C58DAD80017DB32 /* BlocDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B2806B1C58DAD80017DB32 /* BlocDemo.swift */; };
 		22C23A7D1C50C5E80068B328 /* TBRegionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C23A7C1C50C5E80068B328 /* TBRegionListViewController.m */; };
 		22C23A821C50C6C60068B328 /* TBRegionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C23A7F1C50C6C60068B328 /* TBRegionCell.m */; };
 		22C23A831C50C6C60068B328 /* TBRegionShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C23A811C50C6C60068B328 /* TBRegionShowView.m */; };
@@ -188,6 +189,7 @@
 		015088171C4BF500000560EA /* WeatherHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherHomeViewController.h; sourceTree = "<group>"; };
 		015088181C4BF500000560EA /* WeatherHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherHomeViewController.m; sourceTree = "<group>"; };
 		0AE2756B5AD9E99254415060 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		22B2806B1C58DAD80017DB32 /* BlocDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlocDemo.swift; sourceTree = "<group>"; };
 		22C23A7B1C50C5E80068B328 /* TBRegionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRegionListViewController.h; sourceTree = "<group>"; };
 		22C23A7C1C50C5E80068B328 /* TBRegionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRegionListViewController.m; sourceTree = "<group>"; };
 		22C23A7E1C50C6C60068B328 /* TBRegionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRegionCell.h; sourceTree = "<group>"; };
@@ -731,6 +733,7 @@
 				22C23B631C5216BA0068B328 /* HomeViewController.h */,
 				22C23B641C5216BA0068B328 /* HomeViewController.m */,
 				22C23B681C521EAB0068B328 /* SwiftView.swift */,
+				22B2806B1C58DAD80017DB32 /* BlocDemo.swift */,
 				22C23B661C52183A0068B328 /* SFTListViewController.swift */,
 				22C23B7C1C5345710068B328 /* SFTLabelViewController.swift */,
 				22E836471C56142D009818F7 /* SFTUserAgentInfoViewController.swift */,
@@ -1243,6 +1246,7 @@
 				22C23AC31C50DBBF0068B328 /* QuanZiTypeChooseVC.m in Sources */,
 				22F473291C48E988003C0672 /* ViewController.m in Sources */,
 				22C23B381C50E7F40068B328 /* QuanZiDetailVC.m in Sources */,
+				22B2806C1C58DAD80017DB32 /* BlocDemo.swift in Sources */,
 				22F445D81C4CEC6500751F95 /* FMDatabase.m in Sources */,
 				22C23A7D1C50C5E80068B328 /* TBRegionListViewController.m in Sources */,
 				22C23B3A1C50E7F40068B328 /* QuanZiPostListVC.m in Sources */,

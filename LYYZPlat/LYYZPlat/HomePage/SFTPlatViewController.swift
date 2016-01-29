@@ -22,7 +22,7 @@ class SFTPlatViewController: XXRootViewController ,SwiftViewDelegate{
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.showAlertControllerWithTitle("Swift 代理简单尝试", andSubTitle: "你看看点击视图块的动画效果")
+        self.showAlertControllerWithTitle("Swift 代理使用，block回调的使用demo", andSubTitle: "你看看点击视图块的动画效果")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +35,16 @@ class SFTPlatViewController: XXRootViewController ,SwiftViewDelegate{
         myView!.backgroundColor = UIColor.orangeColor()
         self.view.addSubview(myView!)
         
+        //使用block回调
+        myView!.blockClick = {
+            (a:Int) ->() in
+            print("-->block event :sender_index=",a)
+        }
+        
+        
         
 //        myView?.blockClick =
-//        
+// 
 //        myView?.blockClick(2):
         
     }
@@ -54,7 +61,7 @@ class SFTPlatViewController: XXRootViewController ,SwiftViewDelegate{
         }
         
         
-        blockTest()
+//        blockTest()
     }
     
     
@@ -63,82 +70,82 @@ class SFTPlatViewController: XXRootViewController ,SwiftViewDelegate{
         var bk = BlocDemo()
         
         //block设置前,啥也没有输出
-        bk.testProperty(0)
-        bk.testProperty(1)
-        bk.testProperty(2)
-        bk.testProperty(3)
+//        bk.testProperty(0)
+//        bk.testProperty(1)
+//        bk.testProperty(2)
+//        bk.testProperty(3)
         print("＝＝＝＝＝＝＝＝＝＝＝＝＝＝设置block属性＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝")
         
-        bk.blockProperty = {
-            (a :Int,b:Int) -> String in
-            let c = a*100+b
-            return "\(a)*100+\(b) = \(c)"
-        }
-        bk.testProperty(0)
+//        bk.blockProperty = {
+//            (a :Int,b:Int) -> String in
+//            let c = a*100+b
+//            return "\(a)*100+\(b) = \(c)"
+//        }
+//        bk.testProperty(0)
         
-        bk.blockPropertyNoReturn = {
-            (param:String) -> () in
-            print("input param value is : \(param)")
-        }
-        bk.testProperty(1)
-        
+//        bk.blockPropertyNoReturn = {
+//            (param:String) -> () in
+//            print("input param value is : \(param)")
+//        }
+//        bk.testProperty(1)
+//
         bk.blockPropertyA = {
             (a:Int,b:Int) -> String in
             let c = a*100+b*200
             return "\(a)*100+\(b)*200 = \(c)"
         }
         bk.testProperty(2)
-        
-        bk.blockPropertyB = {
-            (a:Int,b:Int) -> (String)->() in
-            func sumprint(result:String)
-            {
-                let c = a + b;
-                print("sumprint func print:parame :\(result) \(a) + \(b) = \(c)")
-            }
-            
-            return sumprint
-        }
-        bk.testProperty(3)
+//
+//        bk.blockPropertyB = {
+//            (a:Int,b:Int) -> (String)->() in
+//            func sumprint(result:String)
+//            {
+//                let c = a + b;
+//                print("sumprint func print:parame :\(result) \(a) + \(b) = \(c)")
+//            }
+//            
+//            return sumprint
+//        }
+//        bk.testProperty(3)
         print("＝＝＝＝＝＝＝＝＝＝＝＝＝＝属性block完成＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝")
         
         print("＝＝＝＝＝＝＝＝＝＝＝＝＝＝函数block为nil时无输出＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝")
-        bk.testBlock(nil)
-        bk.testBlockA(nil)
-        bk.testBlockB(nil)
-        bk.testBlockC(nil)
-        print("＝＝＝＝＝＝＝＝＝＝＝＝＝＝函数block操作＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝")
-        bk.testBlock({
-            //do something
-            print("无参无返回值block 执行")
-        })
-        
-        bk.testBlockA({
-            (a:Int,b:Int) -> String in
-            let c = a*400+b*1000
-            return "\(a)*400 + \(b)*1000 is \(c)"
-        })
-        
-        bk.testBlockB({
-            (a:Int,b:Int) -> (String)->() in
-            func sumprint(result:String)
-            {  
-                let c = a / b;  
-                print("sumprint func print:parame :\(result) \(a) / \(b) = \(c)")  
-            }  
-            
-            return sumprint  
-        })  
-        
-        bk.testBlockC({  
-            (a:Int,b:Int) -> (String)->String in  
-            func sumrsult(res:String) -> String  
-            {  
-                let c = a*a+b*a  
-                return "\(res) \(a)*\(a)+\(b)*\(a) = \(c)"  
-            }  
-            return sumrsult  
-        })
+//        bk.testBlock(nil)
+//        bk.testBlockA(nil)
+//        bk.testBlockB(nil)
+//        bk.testBlockC(nil)
+//        print("＝＝＝＝＝＝＝＝＝＝＝＝＝＝函数block操作＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝")
+//        bk.testBlock({
+//            //do something
+//            print("无参无返回值block 执行")
+//        })
+//        
+//        bk.testBlockA({
+//            (a:Int,b:Int) -> String in
+//            let c = a*400+b*1000
+//            return "\(a)*400 + \(b)*1000 is \(c)"
+//        })
+//        
+//        bk.testBlockB({
+//            (a:Int,b:Int) -> (String)->() in
+//            func sumprint(result:String)
+//            {  
+//                let c = a / b;  
+//                print("sumprint func print:parame :\(result) \(a) / \(b) = \(c)")  
+//            }  
+//            
+//            return sumprint  
+//        })  
+//        
+//        bk.testBlockC({  
+//            (a:Int,b:Int) -> (String)->String in  
+//            func sumrsult(res:String) -> String  
+//            {  
+//                let c = a*a+b*a  
+//                return "\(res) \(a)*\(a)+\(b)*\(a) = \(c)"  
+//            }  
+//            return sumrsult  
+//        })
         
         
     }

@@ -32,6 +32,8 @@ class BlocDemo: NSObject {
         print("blockProperty = \(blockProperty) , blockPropertyNoReturn = \(blockPropertyNoReturn)")
     }
     
+    
+    
     func testProperty(tag:Int)
     {
         switch (tag)
@@ -44,6 +46,7 @@ class BlocDemo: NSObject {
                 let result = self.blockPropertyA!(7,8)
                 print("result = \(result)")
             }
+            
         case 3:
             if let exsistBlock = self.blockPropertyB
             {
@@ -55,6 +58,9 @@ class BlocDemo: NSObject {
             print(ret)
         }
     }
+    
+    
+    
     
     //block作为函数参数
     func testBlock(blockfunc:funcBlock!)//使用!号不需要再解包
@@ -92,4 +98,5 @@ class BlocDemo: NSObject {
             print(str)
         }
     }
+    
 }
